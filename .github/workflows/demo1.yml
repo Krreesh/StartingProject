@@ -9,14 +9,15 @@ on:
       - 'feat/**' 
     paths-ignore:
       - 'components/**'
-    paths:
-      - '.github/workflows/*'
+    
   workflow_dispatch:
   push:
     branches:
       - main
       - 'release-*' #release-new #release-1018
       - 'feat/**' #feat/new feat/new/button
+    paths:
+      - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
