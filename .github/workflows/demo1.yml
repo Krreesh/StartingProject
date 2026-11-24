@@ -9,6 +9,8 @@ on:
       - 'feat/**' 
     paths-ignore:
       - 'components/**'
+    paths:
+      - '.github/workflows/*'
   workflow_dispatch:
   push:
     branches:
