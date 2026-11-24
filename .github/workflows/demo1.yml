@@ -4,7 +4,8 @@ on:
     types: 
       - opened
     branches:
-      - main
+      - master
+      - 'dev-*'
       - 'release-*'
       - 'feat/**' 
     paths-ignore:
