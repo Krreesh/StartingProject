@@ -6,13 +6,16 @@ on:
     branches:
       - main
       - 'release-*'
-      - 'feat/**' 
+      - 'feat/**'   
+    paths-ignore:
+      - 'components/*'  
   workflow_dispatch:
   push:
     branches:
       - main
       - 'release-*' #release-new #release-1018
       - 'feat/**' #feat/new feat/new/button
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
